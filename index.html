@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mindling</title>
+  <meta name="description" content="Mindling is a playful, no-login mental wellness playground for overthinking, nervous system support, and practicing new responses." />
+  <style>
+    :root{--bg:#070710;--panel:#111124;--panel2:#17172f;--text:#fff9f2;--muted:#c7c3d9;--pink:#ff4cb4;--cyan:#37e7e7;--lime:#b8f34b;--yellow:#ffd84d;--purple:#9c63ff;--danger:#ff786d;--ok:#56dfa2;--border:rgba(255,255,255,.12)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-rounded,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(circle at 20% -10%,#321d50 0,transparent 34%),radial-gradient(circle at 85% 10%,#0a4b55 0,transparent 28%),var(--bg);color:var(--text);min-height:100vh}
+    button,a{font:inherit}.wrap{width:min(1180px,calc(100% - 28px));margin:auto}.topbar{display:flex;justify-content:space-between;align-items:center;padding:18px 0;gap:16px}.brand{font-size:1.45rem;font-weight:900;letter-spacing:.02em}.brand span{color:var(--pink)}.nav{display:flex;gap:10px;flex-wrap:wrap}.nav a{color:var(--muted);text-decoration:none;padding:10px 14px;border:1px solid transparent;border-radius:999px}.nav a:hover{border-color:var(--border);color:white}.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;padding:42px 0 28px}.eyebrow{display:inline-flex;gap:8px;align-items:center;padding:8px 12px;border:1px solid var(--border);border-radius:999px;color:var(--cyan);background:rgba(55,231,231,.07);font-weight:800}.hero h1{font-size:clamp(3.2rem,8vw,7rem);line-height:.86;margin:18px 0 18px;letter-spacing:-.055em}.hero h1 .pink{color:var(--pink)}.hero h1 .cyan{color:var(--cyan)}.hero p{font-size:1.12rem;line-height:1.7;color:var(--muted);max-width:760px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.btn{border:0;border-radius:16px;padding:14px 18px;font-weight:900;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:8px}.primary{background:linear-gradient(135deg,var(--pink),var(--purple));color:white}.secondary{background:var(--panel);color:white;border:1px solid var(--border)}.hero-art{min-height:430px;position:relative;border:1px solid var(--border);border-radius:34px;background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));overflow:hidden}.planet{position:absolute;border-radius:50%}.p1{width:170px;height:170px;background:radial-gradient(circle at 35% 30%,#ff69ce,#6d16b6 55%,#1c0e4a);left:36px;top:55px;box-shadow:0 0 50px rgba(255,76,180,.25)}.ring{position:absolute;width:230px;height:55px;border:12px solid rgba(55,231,231,.8);border-radius:50%;left:4px;top:113px;transform:rotate(-13deg)}.alien{position:absolute;right:38px;bottom:32px;width:190px;height:240px;background:linear-gradient(#b9ff80,#62d987);border-radius:50% 50% 44% 44%/42% 42% 56% 56%;border:5px solid #0d331f;box-shadow:0 0 45px rgba(184,243,75,.18)}.alien:before,.alien:after{content:"";position:absolute;width:34px;height:62px;background:#0b1512;border-radius:60% 40%;top:62px}.alien:before{left:38px;transform:rotate(10deg)}.alien:after{right:38px;transform:rotate(-10deg)}.alien-mouth{position:absolute;left:58px;bottom:47px;width:64px;height:24px;border-bottom:6px solid #173721;border-radius:50%}.sticky{position:absolute;background:#ffe263;color:#251a00;padding:14px 15px;font-weight:900;width:155px;transform:rotate(-4deg);right:210px;top:40px;box-shadow:0 8px 30px rgba(0,0,0,.25)}.star{position:absolute;font-size:26px;animation:twinkle 2.8s infinite alternate}.s1{left:45%;top:18%;color:var(--yellow)}.s2{left:61%;top:38%;color:var(--pink);animation-delay:1s}.s3{left:14%;bottom:12%;color:var(--cyan);animation-delay:.4s}@keyframes twinkle{from{opacity:.4;transform:scale(.9)}to{opacity:1;transform:scale(1.15)}}
+    .section{padding:40px 0}.section h2{font-size:clamp(2rem,5vw,3.4rem);margin:0 0 10px}.lead{color:var(--muted);max-width:760px;line-height:1.7}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}.card{border:1px solid var(--border);background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.02));border-radius:24px;padding:20px;min-height:190px}.card .icon{font-size:2rem}.card h3{font-size:1.25rem;margin:14px 0 8px}.card p{color:var(--muted);line-height:1.55}.card button{margin-top:8px}.roleplay{display:grid;grid-template-columns:.8fr 1.2fr;gap:18px;margin-top:26px}.meterbox,.scene{border:1px solid var(--border);border-radius:24px;background:var(--panel);padding:22px}.meterrow{margin-bottom:18px}.meterlabel{display:flex;justify-content:space-between;color:var(--muted);font-weight:800;margin-bottom:8px}.meter{height:12px;background:#292944;border-radius:999px;overflow:hidden}.fill{height:100%;width:50%;transition:width .35s ease;background:linear-gradient(90deg,var(--cyan),var(--pink))}.scene .tag{color:var(--lime);font-weight:900;text-transform:uppercase;letter-spacing:.08em;font-size:.78rem}.message{margin:18px 0;padding:18px;border-radius:18px;background:var(--panel2);font-size:1.08rem;line-height:1.55}.choices{display:grid;gap:10px}.choice{width:100%;text-align:left;background:#191932;border:1px solid var(--border);color:white;border-radius:16px;padding:14px 15px;cursor:pointer}.choice:hover{border-color:var(--cyan)}.feedback{margin-top:16px;padding:16px;border-radius:16px;background:rgba(55,231,231,.08);border:1px solid rgba(55,231,231,.25);display:none;line-height:1.55}.feedback.show{display:block}.tiny{font-size:.87rem;color:var(--muted)}.footer{padding:38px 0 56px;color:var(--muted);display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.footer a{color:var(--cyan)}
+    @media (max-width:840px){.hero,.roleplay{grid-template-columns:1fr}.hero-art{min-height:360px}.grid{grid-template-columns:1fr}.nav{display:none}.alien{transform:scale(.82);transform-origin:bottom right}.sticky{right:130px}.hero h1{font-size:clamp(3.4rem,16vw,6rem)}}
+    @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}.star{animation:none}}
+  </style>
+</head>
+<body>
+  <header class="wrap topbar">
+    <div class="brand">MIND<span>LING</span> ✦</div>
+    <nav class="nav" aria-label="Main navigation"><a href="#play">Role Play</a><a href="#tools">Tools</a><a href="#about">About</a></nav>
+  </header>
+
+  <main>
+    <section class="wrap hero">
+      <div>
+        <div class="eyebrow">🧠 No login. No judgment. Just practice.</div>
+        <h1>Your brain is <span class="pink">loud.</span><br><span class="cyan">Let’s work with it.</span></h1>
+        <p>Mindling is a playful mental wellness playground for overthinking, big feelings, awkward conversations, nervous system chaos, and practicing what you want to do next.</p>
+        <div class="actions"><a class="btn primary" href="#play">🎭 Try a role play</a><a class="btn secondary" href="#tools">✨ Explore the tools</a></div>
+      </div>
+      <div class="hero-art" aria-label="Playful cosmic Mindling illustration">
+        <div class="planet"></div><div class="p1 planet"></div><div class="ring"></div><div class="sticky">YOUR BRAIN WORKS HARD. YOU DON’T HAVE TO. 💗</div><div class="alien"><div class="alien-mouth"></div></div><div class="star s1">✦</div><div class="star s2">✹</div><div class="star s3">✧</div>
+      </div>
+    </section>
+
+    <section id="tools" class="wrap section">
+      <h2>What’s your brain doing today?</h2>
+      <p class="lead">Pick the mess you’re in. Mindling gives you something small and useful to do with it.</p>
+      <div class="grid">
+        <article class="card"><div class="icon">💬</div><h3>Choose Your Response</h3><p>Practice texts, boundaries, conflict, rejection, and uncomfortable conversations without real-world consequences.</p><a class="btn secondary" href="#play">Start a scenario</a></article>
+        <article class="card"><div class="icon">🔥🍞</div><h3>Is It Toast?</h3><p>Sort out “my alarm is real” from “there is definitely an actual fire.” Your nervous system can be loud and still be mistaken.</p><button class="btn secondary" type="button" onclick="alert('Coming next: the Is It Toast? nervous-system checker!')">Preview coming next</button></article>
+        <article class="card"><div class="icon">🗑️</div><h3>Brain Drafts</h3><p>Write the message, argument, comeback, or imaginary explanation your brain keeps reopening. Then decide whether it needs sending or deleting.</p><button class="btn secondary" type="button" onclick="alert('Coming next: type a thought, archive it, rewrite it, or delete the draft.')">Preview coming next</button></article>
+        <article class="card"><div class="icon">🔋</div><h3>Refill Station</h3><p>Running on 8%? Choose what is draining you and get tiny options that fit the capacity you actually have.</p></article>
+        <article class="card"><div class="icon">🌀</div><h3>Overthinking Archive</h3><p>Visit the folders your brain loves most: WHAT IF, REPLAYS, WORST CASES, I SHOULD HAVE, and MAYBE SOMEDAY.</p></article>
+        <article class="card"><div class="icon">🧪</div><h3>Big Feelings Lab</h3><p>Interactive little experiments about shame, anxiety, boundaries, people pleasing, executive functioning, and emotional regulation.</p></article>
+      </div>
+    </section>
+
+    <section id="play" class="wrap section">
+      <h2>Choose Your Response</h2>
+      <p class="lead">There isn’t one perfect answer. The point is to notice what each choice does to your stress, clarity, and connection, then try again.</p>
+      <div class="roleplay">
+        <aside class="meterbox">
+          <div class="meterrow"><div class="meterlabel"><span>Brain alarm</span><span id="alarmNum">68%</span></div><div class="meter"><div class="fill" id="alarmFill" style="width:68%"></div></div></div>
+          <div class="meterrow"><div class="meterlabel"><span>Clarity</span><span id="clarityNum">32%</span></div><div class="meter"><div class="fill" id="clarityFill" style="width:32%"></div></div></div>
+          <div class="meterrow"><div class="meterlabel"><span>Connection</span><span id="connectionNum">55%</span></div><div class="meter"><div class="fill" id="connectionFill" style="width:55%"></div></div></div>
+          <p class="tiny">These meters are playful reflection tools, not a clinical score.</p>
+        </aside>
+        <div class="scene">
+          <div class="tag" id="sceneTag">Scenario 01 · The unread spiral</div>
+          <div class="message" id="sceneText">You text someone you care about at 12:14 PM. It’s now 6:47 PM. They viewed it three hours ago and haven’t replied.</div>
+          <h3 id="promptText">What does your brain want to do first?</h3>
+          <div class="choices" id="choices"></div>
+          <div class="feedback" id="feedback" aria-live="polite"></div>
+          <div class="actions"><button class="btn secondary" id="restartBtn" type="button">↻ Restart scenario</button></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="wrap section">
+      <h2>Built for humans, not perfect coping robots.</h2>
+      <p class="lead">Mindling is educational and reflective, not therapy, diagnosis, or crisis care. The goal is to make emotional skills feel less clinical, more memorable, and easier to practice in the moment.</p>
+    </section>
+  </main>
+
+  <footer class="wrap footer"><div>© Mindling · no account required</div><div>Want more Mindling? <a href="https://www.patreon.com/cw/ChrisGreer/posts" target="_blank" rel="noreferrer">Visit Chris Greer on Patreon ↗</a></div></footer>
+
+  <script>
+    const state={alarm:68,clarity:32,connection:55,step:'start'};
+    const nodes={
+      start:{prompt:'What does your brain want to do first?',choices:[
+        {label:'Send “Are you mad at me?”',next:'mad',delta:{alarm:14,clarity:-8,connection:-10},feedback:'Totally understandable. This choice tries to get certainty fast. The downside: when the fear is still driving, reassurance can become another thing your brain needs repeatedly.'},
+        {label:'Open the chat again and reread everything',next:'reread',delta:{alarm:8,clarity:-7,connection:0},feedback:'Your brain is looking for evidence. The problem is that anxious rereading usually finds “proof” for whichever fear was already there.'},
+        {label:'Wait, but tell yourself a neutral story',next:'neutral',delta:{alarm:-16,clarity:15,connection:4},feedback:'Neutral does not mean fake-positive. It means choosing a story that fits the evidence: “I do not know why they have not replied yet.”'},
+        {label:'Send six question marks. For science.',next:'science',delta:{alarm:20,clarity:-10,connection:-18},feedback:'Bold. Chaotic. Extremely efficient at turning uncertainty into a brand-new problem. 😂'}
+      ]},
+      mad:{text:'They reply: “No?? I’ve just had a ridiculous day. Why?”',prompt:'Now what?',choices:[
+        {label:'“Sorry. I was overthinking.”',next:'endGood',delta:{alarm:-18,clarity:16,connection:13},feedback:'You named what happened without making them responsible for fixing it. That tends to create more room for connection.'},
+        {label:'“Nothing. Never mind.”',next:'endTense',delta:{alarm:8,clarity:-5,connection:-12},feedback:'This protects you from feeling exposed, but it can leave the other person confused and leave your fear unresolved.'},
+        {label:'Explain every reason you thought they were mad',next:'endSpiral',delta:{alarm:10,clarity:-3,connection:-6},feedback:'Explaining can feel like control. If the nervous system is still activated, though, a longer explanation can keep the spiral alive.'}
+      ]},
+      reread:{text:'You reread the thread. “K” now looks suspicious. So does the period after “sounds good.”',prompt:'Your brain has opened a full investigation. What next?',choices:[
+        {label:'Keep investigating punctuation',next:'endSpiral',delta:{alarm:16,clarity:-12,connection:0},feedback:'Welcome to the Department of Unlicensed Punctuation Analysis. More data did not create more certainty.'},
+        {label:'Close the chat and do one concrete thing',next:'neutral',delta:{alarm:-13,clarity:11,connection:2},feedback:'Good pivot. You are not proving the fear wrong; you are choosing not to feed it while you wait for real information.'}
+      ]},
+      neutral:{text:'You tell yourself: “I do not know why they have not replied yet. There are at least ten explanations that are not about me.” Twenty minutes later, they text: “Sorry! Work exploded.”',prompt:'What do you send?',choices:[
+        {label:'“No worries. Hope your day calms down 💛”',next:'endGood',delta:{alarm:-20,clarity:18,connection:18},feedback:'This response fits the information you actually have. You kept the connection without requiring reassurance.'},
+        {label:'“It’s fine.”',next:'endTense',delta:{alarm:-5,clarity:5,connection:-5},feedback:'Maybe it is fine, maybe it is not. If you are actually hurt, a clearer response later may be more useful than pretending.'}
+      ]},
+      science:{text:'They respond: “??? everything okay?”',prompt:'Mission control would like a statement.',choices:[
+        {label:'Admit you got anxious and reset',next:'endGood',delta:{alarm:-20,clarity:17,connection:12},feedback:'Repair is a skill. A weird moment does not have to become a whole weird relationship.'},
+        {label:'Double down: “YOU TELL ME.”',next:'endSpiral',delta:{alarm:18,clarity:-14,connection:-20},feedback:'Your nervous system has chosen courtroom drama. Entertaining, perhaps. Effective, less so.'}
+      ]},
+      endGood:{text:'The conversation settles. Nothing magical happened. You just made one choice that gave your brain less fuel.',prompt:'That’s the experiment.',choices:[]},
+      endTense:{text:'The interaction ends, but you still feel a little unfinished inside.',prompt:'Not failure. Just information.',choices:[]},
+      endSpiral:{text:'The situation now feels bigger than it did before. Your brain got certainty-adjacent activity, but not actual clarity.',prompt:'Useful data for next time.',choices:[]}
+    };
+    const $=id=>document.getElementById(id); const clamp=n=>Math.max(0,Math.min(100,n));
+    function meters(){['alarm','clarity','connection'].forEach(k=>{$(k+'Fill').style.width=state[k]+'%';$(k+'Num').textContent=state[k]+'%';});}
+    function render(nodeKey){state.step=nodeKey;const node=nodes[nodeKey];if(node.text)$('sceneText').textContent=node.text;$('promptText').textContent=node.prompt;$('choices').innerHTML='';$('feedback').classList.remove('show');$('feedback').textContent='';node.choices.forEach(c=>{const b=document.createElement('button');b.type='button';b.className='choice';b.textContent=c.label;b.addEventListener('click',()=>{Object.entries(c.delta||{}).forEach(([k,v])=>state[k]=clamp(state[k]+v));meters();$('feedback').textContent=c.feedback;$('feedback').classList.add('show');setTimeout(()=>render(c.next),1300);});$('choices').appendChild(b);});}
+    $('restartBtn').addEventListener('click',()=>{state.alarm=68;state.clarity=32;state.connection=55;$('sceneText').textContent='You text someone you care about at 12:14 PM. It’s now 6:47 PM. They viewed it three hours ago and haven’t replied.';meters();render('start');});
+    meters();render('start');
+  </script>
+</body>
+</html>
